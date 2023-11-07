@@ -1,0 +1,471 @@
+Exception in thread "main" java.lang.ClassNotFoundException: com.service.backend.BackendApplication
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:151)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:46)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.10)
+
+2023-04-06 15:58:10.046  INFO 618605 --- [           main] com.blog.bz2021.Bz2021Application        : Starting Bz2021Application v0.0.1-SNAPSHOT using Java 1.8.0_362 on VM-4-5-ubuntu with PID 618605 (/etc/www/bz2021/bz2021-0.0.1-SNAPSHOT.jar started by root in /etc/www/bz2021)
+2023-04-06 15:58:10.049  INFO 618605 --- [           main] com.blog.bz2021.Bz2021Application        : The following 1 profile is active: "test"
+2023-04-06 15:58:12.351  INFO 618605 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-04-06 15:58:12.382  INFO 618605 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-06 15:58:12.382  INFO 618605 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-06 15:58:12.513  INFO 618605 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-06 15:58:12.513  INFO 618605 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2351 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.2 
+2023-04-06 15:58:13.606  INFO 618605 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2023-04-06 15:58:13.923  INFO 618605 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-04-06 15:58:13.938  INFO 618605 --- [           main] com.blog.bz2021.Bz2021Application        : Started Bz2021Application in 4.535 seconds (JVM running for 5.107)
+2023-04-06 15:59:09.171  INFO 618605 --- [nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-06 15:59:09.172  INFO 618605 --- [nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-06 15:59:09.180  INFO 618605 --- [nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2023-04-06 15:59:09.840  INFO 618605 --- [nio-8088-exec-3] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x03B0xe10xc40xb70xe73IK0xaf0x800xe70xbd0xdbW0xe50xb70xf30x11X0x110xb50xbf ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.73.jar!/:na]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_362]
+
+2023-04-06 15:59:09.840  INFO 618605 --- [nio-8088-exec-2] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030x80s0xcaq0xcd0xb70x000xcfA0x990xc50x9e^0xe400x0en610xc59~0x18ymU@xka0xe70x91 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.73.jar!/:na]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_362]
+
+2023-04-06 15:59:09.850  INFO 618605 --- [nio-8088-exec-4] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x03'0xe30x130xc00xee^0xd30x93C&S0x040x0aF0xe10xf8]0xd70x1bu0x0e0xedK0xc1p0xce0xd00xde0x870xbcXe ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.73.jar!/:na]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_362]
+
+2023-04-06 15:59:20.793  INFO 618605 --- [nio-8088-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-06 15:59:21.504  INFO 618605 --- [nio-8088-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-06 16:08:12.909  INFO 618605 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-06 16:08:12.946  INFO 618605 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.10)
+
+2023-04-06 16:08:19.199  INFO 621296 --- [           main] com.blog.bz2021.Bz2021Application        : Starting Bz2021Application v0.0.1-SNAPSHOT using Java 1.8.0_362 on VM-4-5-ubuntu with PID 621296 (/etc/www/bz2021/bz2021-0.0.1-SNAPSHOT.jar started by root in /etc/www/bz2021)
+2023-04-06 16:08:19.202  INFO 621296 --- [           main] com.blog.bz2021.Bz2021Application        : The following 1 profile is active: "test"
+2023-04-06 16:08:21.176  INFO 621296 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-04-06 16:08:21.191  INFO 621296 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-06 16:08:21.191  INFO 621296 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-06 16:08:21.291  INFO 621296 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-06 16:08:21.291  INFO 621296 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1957 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.2 
+2023-04-06 16:08:22.275  INFO 621296 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2023-04-06 16:08:22.543  INFO 621296 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-04-06 16:08:22.558  INFO 621296 --- [           main] com.blog.bz2021.Bz2021Application        : Started Bz2021Application in 4.038 seconds (JVM running for 4.652)
+2023-04-06 16:09:36.874  INFO 621296 --- [nio-8088-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030xef0xd30x14W$0xd20xd0.0x9c0xd1F@0xe10x0150xb0<0x8e0xbc0xe2tc/0xe0Lc/?7oh0x98 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.73.jar!/:na]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_362]
+
+2023-04-06 16:10:22.349  INFO 621296 --- [nio-8088-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-06 16:10:22.350  INFO 621296 --- [nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-06 16:10:22.351  INFO 621296 --- [nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-06 16:10:22.410  INFO 621296 --- [nio-8088-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-06 16:10:22.841  INFO 621296 --- [nio-8088-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-06 16:10:32.969  INFO 621296 --- [nio-8088-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x03!0xe00x1eG80xe50xaa0xdfh0xfb0x820x0c0x1a0xf9Y^0x0e9m0xa20xa70x8f0x1430xa20x7fN0xe4"0x84#n ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.73.jar!/:na]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_362]
+
+2023-04-06 16:30:14.374  INFO 621296 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-06 16:30:14.422  INFO 621296 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.10)
+
+2023-04-06 16:30:20.674  INFO 626698 --- [           main] com.blog.bz2021.Bz2021Application        : Starting Bz2021Application v0.0.1-SNAPSHOT using Java 1.8.0_362 on VM-4-5-ubuntu with PID 626698 (/etc/www/bz2021/bz2021-0.0.1-SNAPSHOT.jar started by root in /etc/www/bz2021)
+2023-04-06 16:30:20.682  INFO 626698 --- [           main] com.blog.bz2021.Bz2021Application        : The following 1 profile is active: "test"
+2023-04-06 16:30:22.520  INFO 626698 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-04-06 16:30:22.534  INFO 626698 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-06 16:30:22.534  INFO 626698 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-06 16:30:22.608  INFO 626698 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-06 16:30:22.609  INFO 626698 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1797 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.2 
+2023-04-06 16:30:23.391  INFO 626698 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2023-04-06 16:30:23.656  INFO 626698 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-04-06 16:30:23.673  INFO 626698 --- [           main] com.blog.bz2021.Bz2021Application        : Started Bz2021Application in 3.666 seconds (JVM running for 4.29)
+2023-04-06 16:30:39.073  INFO 626698 --- [nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-06 16:30:39.073  INFO 626698 --- [nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-06 16:30:39.077  INFO 626698 --- [nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-04-06 16:30:39.141  INFO 626698 --- [nio-8088-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-06 16:30:39.569  INFO 626698 --- [nio-8088-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-06 16:31:19.600  INFO 626698 --- [nio-8088-exec-2] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x03p0xa50x8eu0xf50xae0xbb ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.73.jar!/:na]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_362]
+
+2023-04-06 16:38:57.924  INFO 626698 --- [io-8088-exec-10] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030xa70xab0xead0x86u40xed-0x960x9cx0x1bJ#0xa50x160xc30xc2Q0xa20x05^0x15t0x0bX0xa40xaaz0xc10x1e ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.73.jar!/:na]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_362]
+
+2023-04-06 16:43:16.440  INFO 626698 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-06 16:43:16.494  INFO 626698 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.10)
+
+2023-04-06 16:43:22.764  INFO 629947 --- [           main] com.blog.bz2021.Bz2021Application        : Starting Bz2021Application v0.0.1-SNAPSHOT using Java 1.8.0_362 on VM-4-5-ubuntu with PID 629947 (/etc/www/bz2021/bz2021-0.0.1-SNAPSHOT.jar started by root in /etc/www/bz2021)
+2023-04-06 16:43:22.771  INFO 629947 --- [           main] com.blog.bz2021.Bz2021Application        : The following 1 profile is active: "test"
+2023-04-06 16:43:24.708  INFO 629947 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-04-06 16:43:24.724  INFO 629947 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-06 16:43:24.724  INFO 629947 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-06 16:43:24.836  INFO 629947 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-06 16:43:24.837  INFO 629947 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1934 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.2 
+2023-04-06 16:43:25.711  INFO 629947 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2023-04-06 16:43:25.942  INFO 629947 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-04-06 16:43:25.961  INFO 629947 --- [           main] com.blog.bz2021.Bz2021Application        : Started Bz2021Application in 3.894 seconds (JVM running for 4.526)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.10)
+
+2023-04-06 16:47:47.029  INFO 631074 --- [           main] com.blog.bz2021.Bz2021Application        : Starting Bz2021Application v0.0.1-SNAPSHOT using Java 1.8.0_362 on VM-4-5-ubuntu with PID 631074 (/etc/www/bz2021/bz2021-0.0.1-SNAPSHOT.jar started by root in /etc/www/bz2021)
+2023-04-06 16:47:47.050  INFO 631074 --- [           main] com.blog.bz2021.Bz2021Application        : The following 1 profile is active: "test"
+2023-04-06 16:47:49.032  INFO 631074 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-04-06 16:47:49.047  INFO 631074 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-06 16:47:49.048  INFO 631074 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-06 16:47:49.146  INFO 631074 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-06 16:47:49.146  INFO 631074 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1971 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.2 
+2023-04-06 16:47:50.172  INFO 631074 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2023-04-06 16:47:50.414  INFO 631074 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-04-06 16:47:50.435  INFO 631074 --- [           main] com.blog.bz2021.Bz2021Application        : Started Bz2021Application in 4.068 seconds (JVM running for 4.612)
+2023-04-06 16:50:15.859  INFO 631074 --- [nio-8088-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030x94H0xc4(O0xa2h0xee0xa20xa1X0xe90x880x918 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.73.jar!/:na]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_362]
+
+2023-04-06 16:50:16.194  INFO 631074 --- [nio-8088-exec-4] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030xad|0x850xaf0x010x860x920xa5b0xcbs0x8c0xc50x950xf5'20xf30xab`'0xb5Q0x8d0x0a0x080xaf0xfc0xcc0xc20xec0xb2 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.73.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.73.jar!/:na]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_362]
+
+2023-04-06 16:50:20.114  INFO 631074 --- [nio-8088-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-06 16:50:20.115  INFO 631074 --- [nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-06 16:50:20.116  INFO 631074 --- [nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-06 16:50:20.182  INFO 631074 --- [nio-8088-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-06 16:50:20.654  INFO 631074 --- [nio-8088-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-06 16:51:57.606  INFO 631074 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-06 16:51:57.651  INFO 631074 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.10)
+
+2023-04-06 16:52:03.849  INFO 632194 --- [           main] com.blog.bz2021.Bz2021Application        : Starting Bz2021Application v0.0.1-SNAPSHOT using Java 1.8.0_362 on VM-4-5-ubuntu with PID 632194 (/etc/www/bz2021/bz2021-0.0.1-SNAPSHOT.jar started by root in /etc/www/bz2021)
+2023-04-06 16:52:03.852  INFO 632194 --- [           main] com.blog.bz2021.Bz2021Application        : The following 1 profile is active: "test"
+2023-04-06 16:52:05.833  INFO 632194 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-04-06 16:52:05.847  INFO 632194 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-06 16:52:05.847  INFO 632194 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-06 16:52:05.921  INFO 632194 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-06 16:52:05.922  INFO 632194 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1928 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.2 
+2023-04-06 16:52:06.874  INFO 632194 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2023-04-06 16:52:07.075  INFO 632194 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-04-06 16:52:07.094  INFO 632194 --- [           main] com.blog.bz2021.Bz2021Application        : Started Bz2021Application in 3.857 seconds (JVM running for 4.49)
+2023-04-06 16:52:16.018  INFO 632194 --- [nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-06 16:52:16.018  INFO 632194 --- [nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-06 16:52:16.019  INFO 632194 --- [nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-06 16:52:16.084  INFO 632194 --- [nio-8088-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-06 16:52:16.595  INFO 632194 --- [nio-8088-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-06 16:54:30.790  INFO 632194 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-06 16:54:30.832  INFO 632194 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.10)
+
+2023-04-06 16:54:37.079  INFO 632851 --- [           main] com.blog.bz2021.Bz2021Application        : Starting Bz2021Application v0.0.1-SNAPSHOT using Java 1.8.0_362 on VM-4-5-ubuntu with PID 632851 (/etc/www/bz2021/bz2021-0.0.1-SNAPSHOT.jar started by root in /etc/www/bz2021)
+2023-04-06 16:54:37.083  INFO 632851 --- [           main] com.blog.bz2021.Bz2021Application        : The following 1 profile is active: "test"
+2023-04-06 16:54:38.944  INFO 632851 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 443 (http)
+2023-04-06 16:54:38.961  INFO 632851 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-06 16:54:38.962  INFO 632851 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-06 16:54:39.081  INFO 632851 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-06 16:54:39.081  INFO 632851 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1864 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.2 
+2023-04-06 16:54:39.914  INFO 632851 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2023-04-06 16:54:40.112  WARN 632851 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 443 is already in use
+2023-04-06 16:54:40.116  INFO 632851 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-06 16:54:40.128  INFO 632851 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-06 16:54:40.156 ERROR 632851 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 443 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 443 or configure this application to listen on another port.
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.10)
+
+2023-04-06 16:55:36.615  INFO 633140 --- [           main] com.blog.bz2021.Bz2021Application        : Starting Bz2021Application v0.0.1-SNAPSHOT using Java 1.8.0_362 on VM-4-5-ubuntu with PID 633140 (/etc/www/bz2021/bz2021-0.0.1-SNAPSHOT.jar started by root in /etc/www/bz2021)
+2023-04-06 16:55:36.618  INFO 633140 --- [           main] com.blog.bz2021.Bz2021Application        : The following 1 profile is active: "test"
+2023-04-06 16:55:38.400  INFO 633140 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-06 16:55:38.414  INFO 633140 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-06 16:55:38.414  INFO 633140 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-06 16:55:38.512  INFO 633140 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-06 16:55:38.512  INFO 633140 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1772 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.2 
+2023-04-06 16:55:39.418  INFO 633140 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2023-04-06 16:55:39.614  INFO 633140 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-06 16:55:39.626  INFO 633140 --- [           main] com.blog.bz2021.Bz2021Application        : Started Bz2021Application in 3.818 seconds (JVM running for 4.396)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.10)
+
+2023-04-06 18:40:24.550  INFO 658837 --- [           main] com.blog.bz2021.Bz2021Application        : Starting Bz2021Application v0.0.1-SNAPSHOT using Java 1.8.0_362 on VM-4-5-ubuntu with PID 658837 (/etc/www/bz2021/bz2021-0.0.1-SNAPSHOT.jar started by root in /etc/www/bz2021)
+2023-04-06 18:40:24.559  INFO 658837 --- [           main] com.blog.bz2021.Bz2021Application        : The following 1 profile is active: "test"
+2023-04-06 18:40:26.871  INFO 658837 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 300 (http)
+2023-04-06 18:40:26.886  INFO 658837 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-06 18:40:26.886  INFO 658837 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-06 18:40:26.994  INFO 658837 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-06 18:40:26.994  INFO 658837 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2283 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.2 
+2023-04-06 18:40:28.157  INFO 658837 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2023-04-06 18:40:28.432  INFO 658837 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 300 (http) with context path ''
+2023-04-06 18:40:28.449  INFO 658837 --- [           main] com.blog.bz2021.Bz2021Application        : Started Bz2021Application in 4.719 seconds (JVM running for 5.531)
+2023-04-06 18:42:30.403  INFO 658837 --- [-nio-300-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-06 18:42:30.404  INFO 658837 --- [-nio-300-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-06 18:42:30.405  INFO 658837 --- [-nio-300-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-06 18:42:30.482  INFO 658837 --- [-nio-300-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-06 18:42:31.053  INFO 658837 --- [-nio-300-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-06 19:05:52.566  INFO 658837 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-06 19:05:52.605  INFO 658837 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.10)
+
+2023-04-06 19:05:58.946  INFO 665217 --- [           main] com.blog.bz2021.Bz2021Application        : Starting Bz2021Application v0.0.1-SNAPSHOT using Java 1.8.0_362 on VM-4-5-ubuntu with PID 665217 (/etc/www/bz2021/bz2021-0.0.1-SNAPSHOT.jar started by root in /etc/www/bz2021)
+2023-04-06 19:05:58.958  INFO 665217 --- [           main] com.blog.bz2021.Bz2021Application        : The following 1 profile is active: "test"
+2023-04-06 19:06:00.790  INFO 665217 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 300 (http)
+2023-04-06 19:06:00.808  INFO 665217 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-06 19:06:00.808  INFO 665217 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-06 19:06:00.889  INFO 665217 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-06 19:06:00.890  INFO 665217 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1808 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.2 
+2023-04-06 19:06:01.948  INFO 665217 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2023-04-06 19:06:02.314  INFO 665217 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 300 (http) with context path ''
+2023-04-06 19:06:02.334  INFO 665217 --- [           main] com.blog.bz2021.Bz2021Application        : Started Bz2021Application in 4.185 seconds (JVM running for 4.76)
+2023-04-06 19:06:08.878  INFO 665217 --- [-nio-300-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-06 19:06:08.878  INFO 665217 --- [-nio-300-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-06 19:06:08.881  INFO 665217 --- [-nio-300-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-04-06 19:06:08.954  INFO 665217 --- [-nio-300-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-06 19:06:09.443  INFO 665217 --- [-nio-300-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-02 21:35:25.087  WARN 665217 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s531ms778µs810ns).
+2023-09-03 22:12:29.897  INFO 665217 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-03 22:12:29.956  INFO 665217 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.10)
+
+2023-11-07 11:00:37.270  INFO 575293 --- [           main] com.blog.bz2021.Bz2021Application        : Starting Bz2021Application v0.0.1-SNAPSHOT using Java 1.8.0_362 on VM-4-5-ubuntu with PID 575293 (/etc/www/bz2021/bz2021-0.0.1-SNAPSHOT.jar started by root in /etc/www/bz2021)
+2023-11-07 11:00:37.316  INFO 575293 --- [           main] com.blog.bz2021.Bz2021Application        : The following 1 profile is active: "test"
+2023-11-07 11:00:41.470  INFO 575293 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 300 (http)
+2023-11-07 11:00:41.509  INFO 575293 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-07 11:00:41.509  INFO 575293 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-11-07 11:00:41.889  INFO 575293 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-07 11:00:41.890  INFO 575293 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4239 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.2 
+2023-11-07 11:00:44.244  INFO 575293 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2023-11-07 11:00:44.708  INFO 575293 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 300 (http) with context path ''
+2023-11-07 11:00:44.724  INFO 575293 --- [           main] com.blog.bz2021.Bz2021Application        : Started Bz2021Application in 9.036 seconds (JVM running for 14.383)
+2023-11-07 11:00:45.785  INFO 575293 --- [-nio-300-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 11:00:45.785  INFO 575293 --- [-nio-300-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-07 11:00:45.787  INFO 575293 --- [-nio-300-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-07 11:00:45.920  INFO 575293 --- [-nio-300-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-07 11:00:48.643  INFO 575293 --- [-nio-300-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
